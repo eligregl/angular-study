@@ -67,26 +67,18 @@
 <h1>ngSwitch</h1>
 <input type="text" required [(ngModel)]="person.name" />
 <div [ngSwitch]="person.name">
-  <p *ngSwitchCase="'nicolas'">
-    La persona es nicolas
+  <p *ngSwitchCase="'Eligreg'">
+    La persona es Eligreg
   </p>
-  <p *ngSwitchCase="'julian'">
-    La persona es Julian
+  <p *ngSwitchCase="'Elias'">
+    La persona es Elias
   </p>
-  <p *ngSwitchCase="'camilo'">
-    La persona es Camilo
+  <p *ngSwitchCase="'José'">
+    La persona es José
   </p>
   <p *ngSwitchDefault>No hace match</p>
 </div>
-<!-- <p *ngIf="person.name === 'nicolas'">
-  La persona es nicolas
-</p>
-<p *ngIf="person.name === 'julian'">
-  La persona es Julian
-</p>
-<p *ngIf="person.name === 'camilo'">
-  La persona es Camilo
-</p> -->
+
 <hr/>
 <h1>*ngFor Objs</h1>
 <div class="products--grid">
@@ -110,7 +102,7 @@
 <hr/>
 <h1>*ngIf</h1>
 <input type="text" required [(ngModel)]="person.name" />
-<p *ngIf="person.name === 'nicolas'">Soy Nicolas</p>
+<p *ngIf="person.name === 'Eligreg'">Soy Eligreg</p>
 <p *ngIf="person.name === 'julian' && person.age === 18; else myBlock">Soy Julian</p>
 <ng-template #myBlock>
   <p>Bloque de else</p>
